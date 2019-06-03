@@ -1,7 +1,7 @@
 # Lånekalkylator
 
 ### Beskrivning
-Uppgiften består av att göra en lånekalkylator likt den som finns på zmarta.se. 
+Uppgiften består av att göra en lånekalkylator.
 Testet innefattar både HTML, CSS och Javascript för att du ska kunna visa dina kunskaper inom området.
 
 
