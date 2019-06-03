@@ -1,0 +1,72 @@
+#app{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculator-button {
+    border: none;
+    line-height: 1;
+    overflow: hidden;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    content: "";
+    font-size: 40px;
+    color: white;
+    background: #61d5a7;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: lighter;
+    transform: translateY(20%);
+    outline: none;
+   
+}
+.amount-value{
+    cursor: pointer;
+    border: solid 1px #B1B1B1;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #1A1A1A;
+    font-weight: lighter;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button-content{
+    padding-bottom: 8px;
+}
+.monthly-cost-label{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.monthly-cost-value{
+    padding-top: 3px;
+    padding-bottom: 12px;
+    font-size: 27px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.subtitle{
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+.amount{
+    padding-bottom: 27px;
+}
+.cta-button{
+    font-style: italic;
+    font-size: 16px;
+    background: #61d5a7;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: lighter;
+    padding: 15px;
+    width: 334px;
+    margin-top: 40px;
+}
+:focus {
+    outline: 0;
+    /* or */
+    outline: none;
+}

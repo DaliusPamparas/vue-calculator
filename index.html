@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+
+<div id="app">
+    <div class="monthly-cost">
+        <div class="monthly-cost-label ">
+            <!-- monthlyCostLabel -->
+            Månadskostnad
+        </div>
+        <div class="monthly-cost-value">
+            <!-- monthlyCost + monthlyCostSuffix -->
+            {{calculateMonthlyCost}} kr
+        </div>
+    </div>
+    <div class="amount">
+        <div class="amount-label subtitle">
+            <!-- loanAmountLabel -->
+            Lånebelopp
+        </div>
+        <div >
+            <button class="calculator-button" v-on:click="loanAmount -= 5000">
+                <span class="button-content">-</span>
+            </button>
+
+            <input type="tel" class="amount-value" v-model.number="loanAmount">
+
+            <button class="calculator-button" v-on:click="loanAmount += 5000">
+                <span class="button-content">+</span>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <div  class="subtitle">
+            <!-- repaymentLabel -->
+            Återbetalningstid
+        </div>
+
+        <div>
+            <button class="calculator-button" v-on:click="repaymentYears -= 1">
+                <span class="button-content">-</span>
+            </button>
+
+            <input type="tel" class="repayment-value amount-value"  v-model.number="repaymentYears" >
+
+            <button class="calculator-button" v-on:click="repaymentYears += 1">
+                <span class="button-content">+</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="">
+        <button class="cta-button">
+            <!-- ctaLabel -->
+            Ansök nu
+        </button>
+    </div>
+   
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
